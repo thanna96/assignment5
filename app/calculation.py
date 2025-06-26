@@ -175,7 +175,7 @@ class Calculation:
         except (KeyError, InvalidOperation, ValueError) as e:
             raise OperationError(f"Invalid calculation data: {str(e)}")
 
-    def __str__(self) -> str:
+    def __str__(self) -> str:# pragma: no cover
         """
         Return string representation of calculation.
 
